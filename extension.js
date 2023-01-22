@@ -83,7 +83,7 @@ function executeSearch(searchTerm) {
       const googleSearchUrl = `https://www.google.com/search?q=${searchTerm}`;
 
       const questionsMeta = [
-          { title: `🌐 🔎 Search Zidi On Site: ${searchTerm}`, url:  zidiSiteSearchUrl},
+          { title: `🌐 🔎 Search On ZIDI Site: ${searchTerm}`, url:  zidiSiteSearchUrl},
           { title: `🕸️ 🔎 Search On Google: ${searchTerm}`, url: googleSearchUrl },
       ];
       try {
@@ -93,7 +93,7 @@ function executeSearch(searchTerm) {
                   const hyphenatedTitle = hyphenateTitle(title)
                   questionsMeta.push({
                       title: `${i + 1} ➡️ ${title} : ✅${user_implementation_type}`,
-                      url: `https://zidiapp.com/solutions/${uid}/${hyphenatedTitle}-in-${language_name}`
+                      url: `https://zidiapp.com/solutions/${uid}/${hyphenatedTitle}`
                   });
               });
           }

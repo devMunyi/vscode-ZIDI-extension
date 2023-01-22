@@ -1,11 +1,8 @@
 # Change Log
 
-
 All notable changes to the "ZIDI code search" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.0]
 
-## [Unreleased]
-
-- Initial release
+- Initial release of ZIDI code search extension
