@@ -38,7 +38,7 @@ var __awaiter =
 //function that activates the extension
 function activate(context) {
   const searchBySelectionInput = vscode.commands.registerCommand(
-    'zidi-instant-search.zidiCodeSearchBySelectionInput',
+    'zidi-code-search.zidiCodeSearchBySelectionInput',
     () =>
       __awaiter(this, void 0, void 0, function* () {
         const searchTerm = getSelectedText();
@@ -47,7 +47,7 @@ function activate(context) {
   );
 
   const searchWithPromptInput = vscode.commands.registerCommand(
-    'zidi-instant-search.zidiCodeSearchByPromptInput',
+    'zidi-code-search.zidiCodeSearchByPromptInput',
     () =>
       __awaiter(this, void 0, void 0, function* () {
         const selectedText = getSelectedText();
@@ -104,7 +104,7 @@ function executeSearch(searchTerm) {
       const questions = questionsMeta.map(q => q.title);
       const selectedTitle = yield vscode.window.showQuickPick(questions, { canPickMany: false });
       const selectedQuestionMeta = questionsMeta.find(q => q.title === selectedTitle);
-      const selectedQuestionUrl = selectedQuestionMeta ? selectedQuestionMeta.url : zidiSiteSearchUrl;
+      const selectedQuestionUrl = selectedQuestionMeta ? selectedQuestionMeta.url : null;
       if (selectedQuestionUrl) {
           open(selectedQuestionUrl);
       }

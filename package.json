@@ -13,33 +13,33 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:zidi-instant-search.zidiCodeSearchByPromptInput",
-    "onCommand:zidi-instant-search.zidiCodeSearchBySelectionInput"
+    "onCommand:zidi-code-search.zidiCodeSearchByPromptInput",
+    "onCommand:zidi-code-search.zidiCodeSearchBySelectionInput"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "zidi-instant-search.zidiCodeSearchByPromptInput",
-        "title": "ZIDI Solution Search",
+        "command": "zidi-code-search.zidiCodeSearchByPromptInput",
+        "title": "ZIDI Code Search",
         "category": "Search",
         "icon": "vs-search"
       },
       {
-				"command": "zidi-instant-search.zidiCodeSearchBySelectionInput",
-				"title": "ZIDI Solution Search",
+				"command": "zidi-code-search.zidiCodeSearchBySelectionInput",
+				"title": "ZIDI Code Search",
 				"category": "Search",
 				"icon": "vs-search"
 			}
     ],
     "keybindings": [
 			{
-				"command": "zidi-instant-search.zidiCodeSearchByPromptInput",
+				"command": "zidi-code-search.zidiCodeSearchByPromptInput",
 				"key": "ctrl+m",
 				"mac": "cmd+m"
 			},
 			{
-				"command": "zidi-instant-search.zidiCodeSearchBySelectionInput",
+				"command": "zidi-code-search.zidiCodeSearchBySelectionInput",
 				"key": "ctrl+shift+m",
 				"mac": "cmd+shift+m"
 			}
