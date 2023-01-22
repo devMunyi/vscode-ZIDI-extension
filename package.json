@@ -1,7 +1,7 @@
 {
   "name": "zidi-code-search",
   "displayName": "ZIDI Code Search",
-  "icon": "images/icon2.png",
+  "icon": "images/icon.png",
   "publisher": "SamuelMunyi",
   "repository": "https://github.com/devMunyi/vscode-ZIDI-extension",
   "description": "Instantly search codesnippet on ZIDI staying in a context of your favorite vs-code. Select a line and initiate the instance search with a `cmd+m` (help) hotkey",
