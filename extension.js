@@ -1,39 +1,39 @@
-// rlthiyl7inn5a32z4hl5blgtcrkhyeriwfq2aftnaujxazkqahna
 const vscode = require('vscode');
 const axios = require('axios');
 const open = require('open')
-var __awaiter =
-  (this && this.__awaiter) ||
-  function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-      function fulfilled(value) {
-        try {
-          step(generator.next(value));
-        } catch (e) {
-          reject(e);
-        }
-      }
-      function rejected(value) {
-        try {
-          step(generator['throw'](value));
-        } catch (e) {
-          reject(e);
-        }
-      }
-      function step(result) {
-        result.done
-          ? resolve(result.value)
-          : new P(function (resolve) {
-              resolve(result.value);
-            }).then(fulfilled, rejected);
-      }
-      step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-  };
 
 /**
  * @param {vscode.ExtensionContext} context
  */
+
+var __awaiter =
+(this && this.__awaiter) ||
+function (thisArg, _arguments, P, generator) {
+  return new (P || (P = Promise))(function (resolve, reject) {
+    function fulfilled(value) {
+      try {
+        step(generator.next(value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+    function rejected(value) {
+      try {
+        step(generator['throw'](value));
+      } catch (e) {
+        reject(e);
+      }
+    }
+    function step(result) {
+      result.done
+        ? resolve(result.value)
+        : new P(function (resolve) {
+            resolve(result.value);
+          }).then(fulfilled, rejected);
+    }
+    step((generator = generator.apply(thisArg, _arguments || [])).next());
+  });
+};
 
 //function that activates the extension
 function activate(context) {
@@ -81,16 +81,16 @@ function executeSearch(searchTerm) {
       const apiSearchUrl = `https://backgen.net/back/search-codesnippet?search_=${searchTerm}&rpp=${rpp}`
       const zidiSiteSearchUrl = `https://zidiapp.com?search_=${searchTerm}`;
       const googleSearchUrl = `https://www.google.com/search?q=${searchTerm}`;
-      
+
       const questionsMeta = [
           { title: `🌐 🔎 Search Zidi On Site: ${searchTerm}`, url:  zidiSiteSearchUrl},
           { title: `🕸️ 🔎 Search On Google: ${searchTerm}`, url: googleSearchUrl },
       ];
       try {
-          const searchResponse = (yield axios.get(apiSearchUrl))?.data;
-          if (searchResponse?.data.length > 0) {
+          const searchResponse = (yield axios.get(apiSearchUrl)).data;
+          if (searchResponse.data && searchResponse.data.length > 0) {
               searchResponse.data.forEach(({ uid, title, language_name, user_implementation_type }, i) => {
-                  hyphenatedTitle = hyphenateTitle(title)
+                  const hyphenatedTitle = hyphenateTitle(title)
                   questionsMeta.push({
                       title: `${i + 1} ➡️ ${title} : ✅${user_implementation_type}`,
                       url: `https://zidiapp.com/solutions/${uid}/${hyphenatedTitle}-in-${language_name}`
@@ -138,6 +138,7 @@ function getSelectedText() {
   return result;
 }
 
+// helper function to hyphenate title
 function hyphenateTitle(str) {
   str = str.toLowerCase();
   return str.replace(/ /gi, '-');
