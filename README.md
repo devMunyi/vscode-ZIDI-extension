@@ -1,8 +1,8 @@
-# Stackoverflow Instant Search - Visual Studio Code Extension
+# ZIDI Code Search - Visual Studio Code Extension
 
-This extension adds a quick command to search ZIDI without leaving your favorite VS Code. You can find the command by name `ZIDI search` or by using the hotkeys `cmd+c` on Mac or `ctrl+c` on Linux/Windows, `c` stands for `code`. As an alternative you can execute search instantly from a context menu (select text -> right click -> Stackoverflow Search) or by using the hotkeys `cmd+shift+c` on Mac or `ctrl+shift+c` on Linux/Windows.
+This extension adds a quick command to search ZIDI without leaving your favorite VS Code. You can find the command by name `ZIDI search` or by using the hotkeys `cmd+m` on Mac or `ctrl+m` on Linux/Windows. As an alternative you can execute search instantly from a context menu (select text -> right click -> ZIDI Search) or by using the hotkeys `cmd+shift+m` on Mac or `ctrl+shift+m` on Linux/Windows.
 
-![ZIDI Code Search](https://raw.githubusercontent.com/alexeystrakh/vscode-stackoverflow-extension/master/images/stackoverflow-search-video.gif "ZIDI Code Search Demo")
+![ZIDI Code Search](https://raw.githubusercontent.com/devMunyi/vscode-zidi-extension/master/images/zidi-search-video.gif "ZIDI Code Search Demo")
 
 
 ## Features
