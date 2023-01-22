@@ -8,7 +8,7 @@ This extension adds a quick command to search ZIDI without leaving your favorite
 ## Features
 
 - ZIDI Code search without leaving VS-Code
-- Execute search with a search term preview (ctrl/cmd+h) or instantly (ctrl/cmd+shift+h)
+- Execute search with a search term preview (ctrl/cmd+m) or instantly (ctrl/cmd+shift+m)
 - Browse search result by title and implementation type (plain code, function based, class based or API based)
 - Open selected post in a default browser
 - Execute ZIDI search as an option if no relevant results found
