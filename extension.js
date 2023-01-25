@@ -74,7 +74,7 @@ function executeSearch(searchTerm) {
       if (!searchTerm || searchTerm.trim() === '') {
           return;
       }
-      searchTerm = encodeURIComponent(searchTerm.trim());
+      searchTerm = searchTerm.trim();
       console.log(`User initiated a zidi search with [${searchTerm}] search term`);
 
       const rpp = 250;

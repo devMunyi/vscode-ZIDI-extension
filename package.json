@@ -1,7 +1,7 @@
 {
   "name": "zidi-code-search",
   "displayName": "ZIDI Code Search",
-  "publisher": "Samuel Munyi",
+  "publisher": "Samuel-Munyi",
   "repository": {
     "type": "git",
     "url": "https://github.com/devMunyi/vscode-ZIDI-extension"
