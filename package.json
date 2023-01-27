@@ -8,7 +8,7 @@
   },
   "icon": "images/icon.png",
   "description": "Instantly search codesnippet on ZIDI staying in a context of your favorite vs-code. Select a line and initiate the instance search with a `cmd+m` (help) hotkey",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.74.0"
   },
